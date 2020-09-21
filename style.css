@@ -1,0 +1,335 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+
+/**globals**/
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration: none;
+	color:#fff;
+}
+
+/******/
+
+body{
+	background:#232323;
+}
+
+.background{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') repeat;
+}
+
+.table-title{
+	width:80%;
+	height:2rem;
+	margin:auto;
+	color:#fff;
+	text-align:center;
+	margin-top: 1rem;
+	border:#888888 solid 1px; 
+}
+
+.nav-bar{
+	width:80%;
+	margin:auto;
+	margin-top:1.4rem;
+	display:flex;
+	justify-content: space-between;
+}
+
+.nav-bar .search, .find{
+	height:1.7rem;
+}
+
+.nav-bar ul li{
+	margin-right: 1rem;
+	padding:3px 10px;
+	border:1px solid #555555;
+}
+
+.nav-bar ul li:hover{
+	opacity: 60%;
+}
+
+.find-player{
+	height:1.7rem;
+}
+
+.find-player:focus{
+	outline:none;
+}
+
+.nav-bar .leaderboard-options{
+	display:flex;
+	justify-content: center;
+}
+
+.nav-bar ul .selected{
+
+	border:#fff solid 2px;
+	
+}
+
+.leaderboards{
+	width:80%;
+	text-align: left;
+	margin:auto;
+	line-height: 1.4rem;
+	border:#888888 solid 1px;
+	border-collapse: collapse;
+	margin-bottom:2rem;
+	z-index: 1;
+
+}
+
+header{
+	width:100%;
+	height:2rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background:#333333;
+	margin:none;
+	color:#fff;
+}
+
+.leaderboards .title{
+	border-bottom:#888888 solid 1px;
+	background:#333333;
+	color:#fff;
+	height:2rem;
+}
+
+.leaderboards a{
+	text-decoration: none;
+	color:#fff;
+}
+
+.leaderboards .player-entry{
+	background: #999999;
+	border-bottom:#aaaaaa solid 1px;
+	color:#fff;
+}
+
+.leaderboards .player-entry td{
+	text-align:center;
+}
+
+.leaderboards .player-entry:hover{
+	opacity: 80%;
+}
+
+.leaderboards .player-entry:nth-child(odd){
+	background: #666666;
+}
+
+.leaderboard-footer{
+	width:80%;
+	height:2rem;
+	margin:auto;
+	color:#fff;
+	text-align:center;
+	border:#888888 solid 1px; 
+	display:flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+	bottom:2rem;
+}
+
+.leaderboard-footer .leaderboard-btns{
+	display: flex;
+	position: relative;
+	right: 1rem;
+}
+
+.current-page{
+	font-weight: bold;
+	font-style: italic;
+	color: #777777;
+}
+
+.leaderboard-footer .leaderboard-btns li{
+	margin-left: 1rem;
+}
+
+
+/*match history pop up*/
+.enabled{
+	width: 85%;
+	margin: auto;
+	position: relative;
+	border-radius: 5px;
+	z-index: 3;
+}
+
+.disabled{
+	width: 85%;
+	margin: auto;
+	position: relative;
+	border-radius: 5px;
+	display:none;
+	z-index:3;
+}
+
+.matchHistory{
+	width:85%;
+	text-align: left;
+	margin:auto;
+	line-height: 1.4rem;
+	border:#888888 solid 1px;
+	border-radius: 5px;
+	background:#222;
+}
+
+.matchHistory-title{
+	width:84.7%;
+	height:2rem;
+	margin:auto;
+	color:#fff;
+	text-align:center;
+	margin-top: 1rem;
+	border:#888888 solid 1px; 
+	border-radius: 5px;
+	background: #333;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*x close button on match history*/
+.close-match-history{
+	width:2.2rem;
+	height:2rem;
+	background: red;
+	border: 1px #fff solid;
+	border-radius: 5px;
+	user-select: none;
+}
+
+.matchHistory .history-entry{
+	height:13rem;
+	background:#aaaaaa;
+}
+
+.matchHistory td, th{
+	text-align: center;
+	color:#fff;
+}
+
+.team-title{
+	text-align: center;
+}
+
+.cell-1{
+	display:flex;
+	flex-direction: column;
+}
+
+.matchHistory .match_info{
+	margin-top:3rem;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.team1{
+	margin-right: 2rem;
+}
+
+.team2{
+	margin-right:2rem;
+}
+
+.team1 td, .team2 td{
+	padding:5px;
+}
+
+/* boxes for player color*/
+.box{
+	height:1rem;
+	width:2rem;
+}
+
+.player-1{
+ 	background:blue;
+}
+
+.player-2{
+	background:red;
+}
+
+.player-3{
+	background:green;
+}
+
+.player-4{
+	background:yellow;
+}
+
+.player-5{
+	background:teal;
+}
+
+.player-6{
+	background:purple;
+}
+
+.player-7{
+	background:grey; 
+}
+
+.player-8{
+	background:orange; 
+}
+
+/*crown for winner*/
+.fa-crown{
+	color:gold;
+}
+
+/*loader during load*/
+.loader{
+	display:inline-block;
+	position:relative;
+	left:50%;
+	color:#fff;
+	animation: 4s spin infinite ease-in-out;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@media (max-width:780px) {
+	.nav-bar .leaderboard-options li{
+		width:3.2rem;
+		font-size:10.5px;
+	}
+
+	.nav-bar input{
+		width:85%;
+	}
+}
+
+@media (max-width:700px) {
+	.enabled{
+		width:60%;
+		overflow: auto;
+	}
+
+	.matchHistory-title{
+		width:100%;
+	}
+
+
+}
+
