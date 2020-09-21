@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Practice Fetching API Data </title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/3ad4a29726.js" crossorigin="anonymous"></script>
+</head>
+<body class="background">
+	<header>
+		<h3>Age Of Empires II:DE Stats</h3>
+	</header>
+	<div class="nav-bar">
+		<ul class="leaderboard-options">
+			<li><a href="javascript:;">Unranked</a></li>
+			<li><a href="javascript:;">Ranked DM 1v1</a></li>
+			<li><a href="javascript:;">Ranked DM TG</a></li>
+			<li class= "selected"><a href="javascript:;">Ranked 1v1</a></li>
+			<li><a href="javascript:;">Ranked TG</a></li>
+		</ul>
+		<div class = "search">
+			<input type="text" placeholder="search" class="find-player">
+			<button class="find"> Find </button>
+		</div>
+	</div>
+	<div class="table-title">
+		<h3 class= "l-title"> Ranked 1v1</h3>
+	</div>
+	<table class="leaderboards">
+  		<tr class="title">
+    		<th>Rank</th>
+    		<th>Rating</th>
+    		<th>Name</th>
+    		<th>Games</th>
+    		<th>Win Rate</th>
+  		</tr>
+  		<!--	
+  		<tr class="player-entry">
+    		<td>565</td>
+    		<td>1500</td>
+    		<td>dummy-entry</td>
+    		<td>1000</td>
+			<td>55%</td>
+  		</tr>
+  	-->
+	</table>
+	
+	<div class="popup disabled">
+	
+		<table class="matchHistory">
+			<div class="matchHistory-title">
+				<h3 class="l-title">Player Match History</h3>
+				<button class="close-match-history"> X </button>
+			</div>
+			<tr class="title">
+				<th>Game Type</th>
+				<th>Mean Elo</th>
+				<th>Match Info</th>
+				<th>Map</th>
+				<th>Server</th>
+			</tr>
+			<!--
+			<tr class="history-entry">
+				<td>Ranked Team Game</td>
+				<td>2100</td>
+				<td class="match_info">
+					<table class="team1">
+						<tr>
+							<td class="box player-1">1</td>
+							<td>2300</td>
+							<td>Mr Yo</td>
+						</tr>
+						<tr>
+							<td class="box player-2">2</td>
+							<td>2270</td>
+							<td>ViVi</td>
+						</tr>
+						<tr>
+							<td class="box player-3">3</td>
+							<td>2155</td>
+							<td>Jibatoang</td>
+						</tr>
+					</table>
+					<table class="team2 winner">
+						<tr>
+							<td class="box player-4">4</td>
+							<td>2240</td>
+							<td>The Max</td>
+						</tr>
+						<tr>
+							<td class="box player-5">5</td>
+							<td>2175</td>
+							<td>Villese</td>
+						</tr>
+						<tr>
+							<td class="box player-6">6</td>
+							<td>2150</td>
+							<td>Slam</td>
+						</tr>
+					</table>
+				</td>
+				<td>NA West</td>
+			</tr>
+		-->
+		</table>
+	</div>
+	<div class= "spinner">
+		
+	</div>
+
+	<script type="text/javascript" src= "./main.js"></script>
+</body>
+</html>
