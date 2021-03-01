@@ -12,9 +12,10 @@ class ladders{
 		*/
 		this.ladder;
 	}
+
 	async getLeaderBoard(type){
 		try{
-			let ret = await fetch(`https://cors-anywhere.herokuapp.com/https://aoe2.net/api/leaderboard?game=aoe2de&leaderboard_id=${type}&start=1&count=10000`);
+			let ret = await fetch(`https://aoe2.net/api/leaderboard?game=aoe2de&leaderboard_id=${type}&start=1&count=10000`);
 			this.ladder = await ret.json();			
 		
 			return this;
