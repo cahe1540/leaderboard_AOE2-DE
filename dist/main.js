@@ -185,9 +185,9 @@ class playerHistory{
 	//fetches match history from api
 	async getPlayerMatchHistory(playerID){
 		try{
-			let ret = await fetch(`https://cors-anywhere.herokuapp.com/https://aoe2.net/api/player/matches?game=aoe2de&steam_id=${playerID}&count=10`);
+			let ret = await fetch(`https://aoe2.net/api/player/matches?game=aoe2de&steam_id=${playerID}&count=10`);
 			this.matchHistory = await ret.json();
-			ret = await fetch(`https://cors-anywhere.herokuapp.com/https://aoe2.net/api/strings?game=aoe2de&language=en`);
+			ret = await fetch(`https://aoe2.net/api/strings?game=aoe2de&language=en`);
 			this.strings = await ret.json();
 		}
 		catch(error){
